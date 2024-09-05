@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container"> 
+    <nav id="header">
+        <div class="nav-portfolio">
+            <p class="nav-name">Portfolio</p>
+        </div>
+        <div class="nav-menu" id="mynavmenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link active-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">About</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Contact</a>
+                    <div class="circle"></div>
+                </li>  
+            </ul>
+        </div>
+        <!----Dark mode---->
+        <div class="mode">
+            <div class="moon-sun" id="toggle-switch">
+                <i class="fa fa-moon" id="moon"></i>
+                <i class="fa fa-sun" id="sun"></i>
+            </div>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+    <!----main---->
+
+    <main class="wrapper">
+        <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="hello">
+                    <p>Hello I'm</p>
+                </div>
+                <div class="featured-name">
+                    <span class="typedText"></span>
+                </div>
+                <div class="text-info">
+                    <p>My name is Anushree Y N, a recent graduate in Artificial Intelligence and Machine Learning. I am eager to apply my skills to real-world challenges and grow in a dynamic work environment.</p>
+                </div>
+                <div class="text-btn">
+                    <button class="btn hire-btn" onclick="window.location.href='mailto:aanusree494@gmail.com';">Hire Me</button>
+                    <button class="btn" onclick="window.location.href='ANUSHREE Y N .pdf';">Download CV <i class="uil uil-file"></i></button>
+                </div>
+                <div class="social-icons">
+                    <div class="icon_circle"></div>
+                    <div class="icon"><a href="https://www.instagram.com/_anu_g_o_w_d_a_?igsh=MXBkYTdxeDlndGdlMQ==" target="_blank"><i class="uil uil-instagram"></i></a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/anushree-y-n-181253209" target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
+                    <div class="icon"><a href=" https://github.com/AnushreeYN" target="_blank"><i class="uil uil-github-alt"></i></a></div>
+                    <div class="icon"><a href="https://wa.me/918660286292" target="_blank"><i class="uil uil-whatsapp"></i></a></div>
+                </div>
+            </div>
+            <div class="feature-image">
+                <div class="image">
+                    <img src="image/girl.png" alt="Profile Picture">
+                </div>
+            </div>
+        </section>
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>About Me</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="about-info">
+                        <figure class="about-me">
+                            <figcaption>
+                                <img src="image/girls.jpg" alt="Profile Picture" class="profile"/>
+                                <h2>AI/ML Engineer</h2>
+                                <p>My name is Anushree Y N, I am a recent graduate with a Bachelor of Engineering (B.E.) degree in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning from RNS Institute of Technology (RNSIT) under Visvesvaraya Technological University (VTU). My academic journey has provided me with a strong foundation in both theoretical and practical aspects of AI and ML. I have further enriched my skills through hands-on internships. At Compsoft Technologies, I completed an internship focused on Python with Machine Learning, where I gained practical experience in developing machine learning models and working with data. Additionally, I interned at Infosys Springboard, specializing in Artificial Intelligence, which allowed me to dive deeper into AI technologies and their applications. During my studies and internships, I have developed a keen interest in creating innovative solutions that leverage AI technologies to solve complex problems. I have experience in various projects, including machine learning models, data analysis, and frontend web development. My passion for learning and adapting to new technologies drives me to continuously explore and apply the latest advancements in the field. With a solid background in AI and ML, combined with my skills in web design and development, I am excited to contribute to projects that push the boundaries of technology and deliver impactful solutions.</p>
+                            </figcaption>
+                        </figure>
+                        <button class="about-me-btn">Hire Me</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="skill">
+                        <div class="skill-box">
+                            <span class="title">HTML</span>
+                            <div class="skill-bar html">
+                                <span class="skill-per">
+                                    <span class="tooltip">75%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">CSS</span>
+                            <div class="skill-bar css">
+                                <span class="skill-per">
+                                    <span class="tooltip">75%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Python</span>
+                            <div class="skill-bar">
+                                <span class="skill-per python">
+                                    <span class="tooltip">85%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">JavaScript</span>
+                            <div class="skill-bar">
+                                <span class="skill-per javascript">
+                                    <span class="tooltip">40%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">PHP</span>
+                            <div class="skill-bar">
+                                <span class="skill-per php">
+                                    <span class="tooltip">30%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Artificial Intelligence</span>
+                            <div class="skill-bar">
+                                <span class="skill-per AI">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Machine Learning</span>
+                            <div class="skill-bar">
+                                <span class="skill-per ML">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Java</span>
+                            <div class="skill-bar">
+                                <span class="skill-per java">
+                                    <span class="tooltip">70%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">MYSQL</span>
+                            <div class="skill-bar">
+                                <span class="skill-per mysql">
+                                    <span class="tooltip">30%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">ReactJS</span>
+                            <div class="skill-bar">
+                                <span class="skill-per reactjs">
+                                    <span class="tooltip">45%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">AWS</span>
+                            <div class="skill-bar">
+                                <span class="skill-per aws">
+                                    <span class="tooltip">20%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Data Structure and Algorithms</span>
+                            <div class="skill-bar">
+                                <span class="skill-per dsa">
+                                    <span class="tooltip">45%</span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1>Projects</h1>
+            </div>
+            <div class="project-container">
+                <div class="project-box">
+                    <i class="uil uil-briefcase-alt"></i>
+                    <h3>Academic Projects</h3>
+                    <label><strong>Health Prognostication for Patients in Hospital Using ML:</strong>
+                        <p>Developed a machine learning model to predict patient outcomes in a hospital setting using Python, ML, CNN, and Random Forest. Involved in data collection, preprocessing, model training, and evaluation.</p></label>
+                </div>
+                <div class="project-box">
+                    <i class="uil uil-briefcase-alt"></i>
+                    <h3> Academic Project</h3>
+                    <label><strong>Play with AI:</strong>
+                        <p>Created interactive experiences where users engage in games or activities with artificial intelligence agents, promoting both learning and entertainment.</p></label>
+                </div>
+                <div class="project-box">
+                    <i class="uil uil-briefcase-alt"></i>
+                    <h3>Internship Project</h3>
+                    <label><strong>Predicting Students' Academic Performance:</strong>
+                        <p>Created an artificial neural network model to predict students' academic performance based on various features. Provided insights for educators to identify at-risk students and tailor interventions.</p></label>
+                </div>
+                <div class="project-box">
+                    <i class="uil uil-briefcase-alt"></i>
+                    <h3>Internship project</h3>
+                    <label><strong>Virtual Assistant for Visually Impaired:</strong>
+                        <p>Designed a voice assistant to aid visually impaired individuals. Features include speech-to-text functionality and object recognition to enhance the living conditions of users.</p></label>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <div class="top-header">
+                <h1>Let's Connect!</h1>
+                <p>As a recent graduate eager to start my career, I'm excited to collaborate on new projects and opportunities. If you have a project or need help with something, I would love to discuss how we can work together.</p>
+                <a href="mailto:your-email@example.com" class="contact-button">Get in Touch</a>                
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+                        <p><i class="uil uil-envelope"></i> Email: <a href="mailto:aanusree494@gmail.com">aanusree494@gmail.com</a></p>
+                        <p><i class="uil uil-phone"></i> Phone: <a href="tel:+918660286292">8660286292</a></p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" placeholder="Your Name">
+                            <input type="email" class="input-field" placeholder="Your Email">
+                        </div>
+                        <div class="text-area">
+                            <input type="text" class="input-subject" placeholder="Subject">  
+                            <textarea placeholder="Message"></textarea>           
+                        </div>
+                        <div class="form-button">
+                            <button class="btn" onclick="window.location.href='mailto:aanusree494@gmail.com';">Send <i class="uil uil-message"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+                    <div class="icon"><a href="https://www.instagram.com/_anu_g_o_w_d_a_?igsh=MXBkYTdxeDlndGdlMQ==" target="_blank"><i class="uil uil-instagram"></i></a></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/anushree-y-n-181253209" target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
+                    <div class="icon"><a href=" https://github.com/AnushreeYN" target="_blank"><i class="uil uil-github-alt"></i></a></div>
+                    <div class="icon"><a href="https://wa.me/918660286292" target="_blank"><i class="uil uil-whatsapp"></i></a></div>
+        </div>
+        <div class="bottom-footer">
+            <p> Copyright &copy; <a href="#home" style="text-decoration: none;">portfolio</a> - All rights reserved 2024</p>
+        </div>
+        </div>
+    </footer>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
