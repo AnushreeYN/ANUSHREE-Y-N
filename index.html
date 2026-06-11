@@ -3,294 +3,581 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="description" content="Portfolio of Anushree Y N, Backend Developer with AI/ML interests, specializing in Python, FastAPI, SQLAlchemy, OCR, automation, REST APIs, and scalable systems.">
+    <meta name="keywords" content="Anushree Y N, Backend Developer, AI ML, OCR, FastAPI, Python, SQLAlchemy, PostgreSQL, Portfolio">
+    <meta name="author" content="Anushree Y N">
+    <title>Anushree Y N | Backend Developer Portfolio</title>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container"> 
-    <nav id="header">
-        <div class="nav-portfolio">
-            <p class="nav-name">Portfolio</p>
-        </div>
-        <div class="nav-menu" id="mynavmenu">
-            <ul class="nav_menu_list">
-                <li class="nav_list">
-                    <a href="#home" class="nav-link active-link">Home</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
-                    <div class="circle"></div>
-                </li>
-                <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
-                    <div class="circle"></div>
-                </li>  
-            </ul>
-        </div>
-        <!----Dark mode---->
-        <div class="mode">
-            <div class="moon-sun" id="toggle-switch">
-                <i class="fa fa-moon" id="moon"></i>
-                <i class="fa fa-sun" id="sun"></i>
-            </div>
-        </div>
-        <div class="nav-menu-btn">
-            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
-        </div>
-    </nav>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!----main---->
+    <header class="site-header" id="header">
+        <nav class="nav" aria-label="Primary navigation">
+            <a class="brand" href="#home" aria-label="Anushree Y N home">
+                <span class="brand-mark">AY</span>
+                <span>Anushree Y N</span>
+            </a>
 
-    <main class="wrapper">
-        <section class="featured-box" id="home">
-            <div class="featured-text">
-                <div class="hello">
-                    <p>Hello I'm</p>
-                </div>
-                <div class="featured-name">
-                    <span class="typedText"></span>
-                </div>
-                <div class="text-info">
-                    <p>My name is Anushree Y N, a recent graduate in Artificial Intelligence and Machine Learning. I am eager to apply my skills to real-world challenges and grow in a dynamic work environment.</p>
-                </div>
-                <div class="text-btn">
-                    <button class="btn hire-btn" onclick="window.location.href='mailto:aanusree494@gmail.com';">Hire Me</button>
-                    <button class="btn" onclick="window.location.href='ANUSHREE Y N .pdf';">Download CV <i class="uil uil-file"></i></button>
-                </div>
-                <div class="social-icons">
-                    <div class="icon_circle"></div>
-                    <div class="icon"><a href="https://www.instagram.com/_anu_g_o_w_d_a_?igsh=MXBkYTdxeDlndGdlMQ==" target="_blank"><i class="uil uil-instagram"></i></a></div>
-                    <div class="icon"><a href="https://www.linkedin.com/in/anushree-y-n-181253209" target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
-                    <div class="icon"><a href=" https://github.com/AnushreeYN" target="_blank"><i class="uil uil-github-alt"></i></a></div>
-                    <div class="icon"><a href="https://wa.me/918660286292" target="_blank"><i class="uil uil-whatsapp"></i></a></div>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <div class="nav-panel" id="navPanel">
+                <ul class="nav-links">
+                    <li><a class="nav-link active" href="#home">Home</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#skills">Skills</a></li>
+                    <li><a class="nav-link" href="#experience">Experience</a></li>
+                    <li><a class="nav-link" href="#projects">Projects</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+
+                <div class="nav-actions">
+                    <button class="icon-btn" id="themeToggle" type="button" aria-label="Switch theme">
+                        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    </button>
+                    <a class="btn btn-ghost resume-btn" href="Anushree Y N.pdf" download>
+                        <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+                        Resume
+                    </a>
+                    <a class="btn btn-primary" href="#contact">
+                        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                        Contact
+                    </a>
                 </div>
             </div>
-            <div class="feature-image">
-                <div class="image">
-                    <img src="image/girl.png" alt="Profile Picture">
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="hero section-block" id="home">
+            <div class="hero-content reveal is-visible">
+                <p class="eyebrow">Backend Developer | Python | FastAPI | AI/ML</p>
+                <h1>Anushree Y N</h1>
+                <p class="hero-role">
+                    I build <span id="typedText" aria-live="polite">scalable backend systems</span>
+                </p>
+                <p class="hero-copy">
+                    Backend-focused developer with 1+ year of experience building secure REST APIs,
+                    OCR-enabled document workflows, browser automation, async services, authentication systems,
+                    and production-ready platforms using Python, FastAPI, SQLAlchemy, PostgreSQL, and Docker.
+                    I am especially interested in backend engineering roles, with AI/ML as a strong supporting area.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">
+                        <i class="fa-solid fa-code-branch" aria-hidden="true"></i>
+                        View Projects
+                    </a>
+                    <a class="btn btn-secondary" href="Anushree Y N.pdf" download>
+                        <i class="fa-solid fa-download" aria-hidden="true"></i>
+                        Download Resume
+                    </a>
+                    <a class="btn btn-ghost" href="#contact">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        Contact Me
+                    </a>
+                </div>
+                <div class="hero-metrics" aria-label="Career highlights">
+                    <div>
+                        <strong>50,000+</strong>
+                        <span>records analyzed</span>
+                    </div>
+                    <div>
+                        <strong>92%</strong>
+                        <span>ML model accuracy</span>
+                    </div>
+                    <div>
+                        <strong>1+ yr</strong>
+                        <span>backend delivery</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal is-visible">
+                <div class="profile-frame">
+                    <img src="image/girl.png" alt="Professional portrait of Anushree Y N" loading="eager">
+                </div>
+                <div class="status-card">
+                    <span class="status-dot" aria-hidden="true"></span>
+                    Available for backend roles
+                </div>
+                <div class="stack-card">
+                    <span>Core stack</span>
+                    <strong>Python + FastAPI + SQLAlchemy</strong>
                 </div>
             </div>
         </section>
-        <section class="section" id="about">
-            <div class="top-header">
-                <h1>About Me</h1>
+
+        <section class="section-block about" id="about">
+            <div class="section-heading reveal">
+                <p class="eyebrow">About</p>
+                <h2>Engineering reliable APIs with product sense.</h2>
+                <p>
+                    I enjoy turning complex workflows into clean services, strong data models, and dependable user-facing systems.
+                </p>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="about-info">
-                        <figure class="about-me">
-                            <figcaption>
-                                <img src="image/girls.jpg" alt="Profile Picture" class="profile"/>
-                                <h2>AI/ML Engineer</h2>
-                                <p>My name is Anushree Y N, I am a recent graduate with a Bachelor of Engineering (B.E.) degree in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning from RNS Institute of Technology (RNSIT) under Visvesvaraya Technological University (VTU). My academic journey has provided me with a strong foundation in both theoretical and practical aspects of AI and ML. I have further enriched my skills through hands-on internships. At Compsoft Technologies, I completed an internship focused on Python with Machine Learning, where I gained practical experience in developing machine learning models and working with data. Additionally, I interned at Infosys Springboard, specializing in Artificial Intelligence, which allowed me to dive deeper into AI technologies and their applications. During my studies and internships, I have developed a keen interest in creating innovative solutions that leverage AI technologies to solve complex problems. I have experience in various projects, including machine learning models, data analysis, and frontend web development. My passion for learning and adapting to new technologies drives me to continuously explore and apply the latest advancements in the field. With a solid background in AI and ML, combined with my skills in web design and development, I am excited to contribute to projects that push the boundaries of technology and deliver impactful solutions.</p>
-                            </figcaption>
-                        </figure>
-                        <button class="about-me-btn">Hire Me</button>
+
+            <div class="about-grid">
+                <article class="panel summary-card reveal">
+                    <h3>Professional Summary</h3>
+                    <p>
+                        I am a backend-focused developer at DigiDxDoc Health Solution Pvt Ltd, focused on scalable FastAPI services,
+                        OCR-powered document processing, secure authentication, role-based access control, background tasks,
+                        browser automation, deployment support, and realtime backup workflows between production and clone servers.
+                        My AI/ML foundation helps me build intelligent features around document extraction, data-heavy products,
+                        and reliable automation.
+                    </p>
+                    <div class="tag-cloud" aria-label="Technologies I work with">
+                        <span>Python</span>
+                        <span>FastAPI</span>
+                        <span>SQLAlchemy</span>
+                        <span>PostgreSQL</span>
+                        <span>Docker</span>
+                        <span>OCR</span>
+                        <span>AI/ML</span>
+                        <span>Automation</span>
+                        <span>REST APIs</span>
+                        <span>React</span>
+                        <span>GitHub</span>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="skill">
-                        <div class="skill-box">
-                            <span class="title">HTML</span>
-                            <div class="skill-bar html">
-                                <span class="skill-per">
-                                    <span class="tooltip">75%</span>
-                                </span>
-                            </div>
+                </article>
+
+                <div class="about-side">
+                    <article class="panel info-card reveal">
+                        <i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+                        <div>
+                            <h3>Experience</h3>
+                            <p>Backend Developer at DigiDxDoc Health Solution Pvt Ltd, building healthcare APIs, OCR features, browser automation, and backup workflows.</p>
                         </div>
-                        <div class="skill-box">
-                            <span class="title">CSS</span>
-                            <div class="skill-bar css">
-                                <span class="skill-per">
-                                    <span class="tooltip">75%</span>
-                                </span>
-                            </div>
+                    </article>
+                    <article class="panel info-card reveal">
+                        <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                        <div>
+                            <h3>Education</h3>
+                            <p>Bachelor of Engineering in Artificial Intelligence and Machine Learning, RNS Institute of Technology.</p>
                         </div>
-                        <div class="skill-box">
-                            <span class="title">Python</span>
-                            <div class="skill-bar">
-                                <span class="skill-per python">
-                                    <span class="tooltip">85%</span>
-                                </span>
-                            </div>
+                    </article>
+                    <article class="panel info-card reveal">
+                        <i class="fa-solid fa-compass-drafting" aria-hidden="true"></i>
+                        <div>
+                            <h3>Interests</h3>
+                            <p>Backend architecture, data-driven products, automation, API performance, and applied AI/ML systems.</p>
                         </div>
-                        <div class="skill-box">
-                            <span class="title">JavaScript</span>
-                            <div class="skill-bar">
-                                <span class="skill-per javascript">
-                                    <span class="tooltip">40%</span>
-                                </span>
-                            </div>
+                    </article>
+                    <article class="panel info-card reveal">
+                        <i class="fa-solid fa-robot" aria-hidden="true"></i>
+                        <div>
+                            <h3>Current Focus</h3>
+                            <p>OCR extraction, auto-upload and auto-delete browser workflows, server sync, and realtime production-to-clone backup reliability.</p>
                         </div>
-                        <div class="skill-box">
-                            <span class="title">PHP</span>
-                            <div class="skill-bar">
-                                <span class="skill-per php">
-                                    <span class="tooltip">30%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Artificial Intelligence</span>
-                            <div class="skill-bar">
-                                <span class="skill-per AI">
-                                    <span class="tooltip">80%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Machine Learning</span>
-                            <div class="skill-bar">
-                                <span class="skill-per ML">
-                                    <span class="tooltip">80%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Java</span>
-                            <div class="skill-bar">
-                                <span class="skill-per java">
-                                    <span class="tooltip">70%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">MYSQL</span>
-                            <div class="skill-bar">
-                                <span class="skill-per mysql">
-                                    <span class="tooltip">30%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">ReactJS</span>
-                            <div class="skill-bar">
-                                <span class="skill-per reactjs">
-                                    <span class="tooltip">45%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">AWS</span>
-                            <div class="skill-bar">
-                                <span class="skill-per aws">
-                                    <span class="tooltip">20%</span>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="skill-box">
-                            <span class="title">Data Structure and Algorithms</span>
-                            <div class="skill-bar">
-                                <span class="skill-per dsa">
-                                    <span class="tooltip">45%</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
-        <section class="section" id="projects">
-            <div class="top-header">
-                <h1>Projects</h1>
+
+        <section class="section-block skills" id="skills">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Skills</p>
+                <h2>Backend-first toolkit with full-stack awareness.</h2>
             </div>
-            <div class="project-container">
-                <div class="project-box">
-                    <i class="uil uil-briefcase-alt"></i>
-                    <h3>Academic Projects</h3>
-                    <label><strong>Health Prognostication for Patients in Hospital Using ML:</strong>
-                        <p>Developed a machine learning model to predict patient outcomes in a hospital setting using Python, ML, CNN, and Random Forest. Involved in data collection, preprocessing, model training, and evaluation.</p></label>
-                </div>
-                <div class="project-box">
-                    <i class="uil uil-briefcase-alt"></i>
-                    <h3> Academic Project</h3>
-                    <label><strong>Play with AI:</strong>
-                        <p>Created interactive experiences where users engage in games or activities with artificial intelligence agents, promoting both learning and entertainment.</p></label>
-                </div>
-                <div class="project-box">
-                    <i class="uil uil-briefcase-alt"></i>
-                    <h3>Internship Project</h3>
-                    <label><strong>Predicting Students' Academic Performance:</strong>
-                        <p>Created an artificial neural network model to predict students' academic performance based on various features. Provided insights for educators to identify at-risk students and tailor interventions.</p></label>
-                </div>
-                <div class="project-box">
-                    <i class="uil uil-briefcase-alt"></i>
-                    <h3>Internship project</h3>
-                    <label><strong>Virtual Assistant for Visually Impaired:</strong>
-                        <p>Designed a voice assistant to aid visually impaired individuals. Features include speech-to-text functionality and object recognition to enhance the living conditions of users.</p></label>
-                </div>
+
+            <div class="skills-grid">
+                <article class="skill-card reveal" style="--level: 92">
+                    <i class="fa-brands fa-python" aria-hidden="true"></i>
+                    <h3>Python</h3>
+                    <p>Backend services, automation, data processing.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 90">
+                    <i class="fa-solid fa-bolt" aria-hidden="true"></i>
+                    <h3>FastAPI</h3>
+                    <p>REST APIs, validation, async endpoints.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 86">
+                    <i class="fa-solid fa-database" aria-hidden="true"></i>
+                    <h3>SQLAlchemy</h3>
+                    <p>ORM models, migrations, query patterns.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 82">
+                    <i class="fa-solid fa-server" aria-hidden="true"></i>
+                    <h3>PostgreSQL</h3>
+                    <p>Relational schema design and reporting.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 78">
+                    <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                    <h3>SQLite</h3>
+                    <p>Local persistence and lightweight apps.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 72">
+                    <i class="fa-brands fa-react" aria-hidden="true"></i>
+                    <h3>React</h3>
+                    <p>Interactive dashboards and frontend views.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 74">
+                    <i class="fa-brands fa-js" aria-hidden="true"></i>
+                    <h3>JavaScript</h3>
+                    <p>Client-side logic and form interactions.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 84">
+                    <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                    <h3>HTML</h3>
+                    <p>Semantic, accessible page structure.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 82">
+                    <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                    <h3>CSS</h3>
+                    <p>Responsive layouts and polished interfaces.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 80">
+                    <i class="fa-brands fa-git-alt" aria-hidden="true"></i>
+                    <h3>Git</h3>
+                    <p>Branching, collaboration, release hygiene.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 80">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <h3>GitHub</h3>
+                    <p>Version control, issues, and code hosting.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 70">
+                    <i class="fa-brands fa-docker" aria-hidden="true"></i>
+                    <h3>Docker</h3>
+                    <p>Containerized local and deployment workflows.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 88">
+                    <i class="fa-solid fa-code" aria-hidden="true"></i>
+                    <h3>REST APIs</h3>
+                    <p>CRUD design, auth, docs, and integrations.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 78">
+                    <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+                    <h3>OCR</h3>
+                    <p>Document text extraction and intelligent upload flows.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 76">
+                    <i class="fa-solid fa-window-restore" aria-hidden="true"></i>
+                    <h3>Browser Automation</h3>
+                    <p>Auto-upload, auto-delete, and workflow automation.</p>
+                    <div class="progress"><span></span></div>
+                </article>
+                <article class="skill-card reveal" style="--level: 74">
+                    <i class="fa-solid fa-rotate" aria-hidden="true"></i>
+                    <h3>Realtime Backup</h3>
+                    <p>Production-to-clone server sync and recovery flows.</p>
+                    <div class="progress"><span></span></div>
+                </article>
             </div>
         </section>
-        <section class="section" id="contact">
-            <div class="top-header">
-                <h1>Let's Connect!</h1>
-                <p>As a recent graduate eager to start my career, I'm excited to collaborate on new projects and opportunities. If you have a project or need help with something, I would love to discuss how we can work together.</p>
-                <a href="mailto:your-email@example.com" class="contact-button">Get in Touch</a>                
+
+        <section class="section-block experience" id="experience">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Experience</p>
+                <h2>Timeline of hands-on engineering work.</h2>
             </div>
-            <div class="row">
-                <div class="col">
-                    <div class="contact-info">
-                        <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
-                        <p><i class="uil uil-envelope"></i> Email: <a href="mailto:aanusree494@gmail.com">aanusree494@gmail.com</a></p>
-                        <p><i class="uil uil-phone"></i> Phone: <a href="tel:+918660286292">8660286292</a></p>
+
+            <div class="timeline">
+                <article class="timeline-item reveal">
+                    <div class="timeline-date">Apr 2025 - Present</div>
+                    <div class="timeline-content panel">
+                        <h3>Backend Developer</h3>
+                        <p class="company">DigiDxDoc Health Solution Pvt Ltd</p>
+                        <ul>
+                            <li>Built scalable REST APIs using FastAPI and SQLAlchemy with modular architecture and role-based access control.</li>
+                            <li>Created healthcare application backends with authentication, authorization, background tasks, and notification workflows.</li>
+                            <li>Built OCR-based document extraction features to support faster upload, validation, and processing workflows.</li>
+                            <li>Worked on browser automation for auto-upload, auto-delete, and operational task handling.</li>
+                            <li>Developed server-link workflows for production-to-clone realtime backup and recovery support.</li>
+                            <li>Improved API performance and supported production deployment collaboration across teams.</li>
+                        </ul>
+                        <div class="mini-tags"><span>Python</span><span>FastAPI</span><span>SQLAlchemy</span><span>OCR</span><span>Automation</span><span>Docker</span></div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="form-control">
-                        <div class="form-inputs">
-                            <input type="text" class="input-field" placeholder="Your Name">
-                            <input type="email" class="input-field" placeholder="Your Email">
-                        </div>
-                        <div class="text-area">
-                            <input type="text" class="input-subject" placeholder="Subject">  
-                            <textarea placeholder="Message"></textarea>           
-                        </div>
-                        <div class="form-button">
-                            <button class="btn" onclick="window.location.href='mailto:aanusree494@gmail.com';">Send <i class="uil uil-message"></i></button>
-                        </div>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-date">Sep 2024 - Oct 2024</div>
+                    <div class="timeline-content panel">
+                        <h3>Data Science Intern</h3>
+                        <p class="company">HumbleMind</p>
+                        <ul>
+                            <li>Developed energy consumption forecasting models with 88% accuracy using LSTM and Random Forest.</li>
+                            <li>Analyzed 50,000+ records with Pandas, feature engineering, and anomaly detection.</li>
+                        </ul>
+                        <div class="mini-tags"><span>Python</span><span>Pandas</span><span>LSTM</span><span>Random Forest</span></div>
                     </div>
-                </div>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-date">Mar 2024 - Jun 2024</div>
+                    <div class="timeline-content panel">
+                        <h3>AI Intern</h3>
+                        <p class="company">Infosys Springboard</p>
+                        <ul>
+                            <li>Built an ANN model to predict student academic performance with 87% accuracy.</li>
+                            <li>Handled preprocessing, feature scaling, and evaluation to identify at-risk students early.</li>
+                        </ul>
+                        <div class="mini-tags"><span>TensorFlow</span><span>Keras</span><span>ANN</span><span>Data Science</span></div>
+                    </div>
+                </article>
+
+                <article class="timeline-item reveal">
+                    <div class="timeline-date">Aug 2023 - Oct 2023</div>
+                    <div class="timeline-content panel">
+                        <h3>ML Intern</h3>
+                        <p class="company">Compsoft Technologies</p>
+                        <ul>
+                            <li>Built a voice assistant using Python, OpenCV, and Google Cloud Vision API for visually impaired users.</li>
+                            <li>Integrated Dialogflow for conversational AI with 90% recognition accuracy across environments.</li>
+                        </ul>
+                        <div class="mini-tags"><span>Python</span><span>OpenCV</span><span>Dialogflow</span><span>Google Vision</span></div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-block projects" id="projects">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Projects</p>
+                <h2>Selected systems, dashboards, and data products.</h2>
+            </div>
+
+            <div class="filter-bar reveal" aria-label="Filter projects by technology">
+                <button class="filter-btn active" type="button" data-filter="all">All</button>
+                <button class="filter-btn" type="button" data-filter="python">Python</button>
+                <button class="filter-btn" type="button" data-filter="fastapi">FastAPI</button>
+                <button class="filter-btn" type="button" data-filter="react">React</button>
+                <button class="filter-btn" type="button" data-filter="ocr">OCR</button>
+                <button class="filter-btn" type="button" data-filter="automation">Automation</button>
+                <button class="filter-btn" type="button" data-filter="ml">ML</button>
+                <button class="filter-btn" type="button" data-filter="web">Web</button>
+            </div>
+
+            <div class="project-grid">
+                <article class="project-card reveal" data-tech="python fastapi react">
+                    <div class="project-media media-alert">
+                        <i class="fa-solid fa-bell" aria-hidden="true"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Alertr</h3>
+                        <p>Alert and notification workflow system for timely updates, event tracking, and operational visibility. Source code is not available on my public GitHub.</p>
+                        <ul>
+                            <li>Role-aware notification workflows</li>
+                            <li>API-first alert management</li>
+                            <li>Readable dashboard experience</li>
+                        </ul>
+                        <div class="mini-tags"><span>Python</span><span>FastAPI</span><span>React</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <span class="project-note">Not on GitHub</span>
+                        <a href="#contact">Discuss Work</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tech="python fastapi">
+                    <div class="project-media media-digi">
+                        <i class="fa-solid fa-file-medical" aria-hidden="true"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>DigiDxUploader</h3>
+                        <p>Healthcare file upload and processing flow designed around reliability, validation, and secure access. Source code is not available on my public GitHub.</p>
+                        <ul>
+                            <li>Structured upload handling</li>
+                            <li>Authentication and authorization</li>
+                            <li>Background processing support</li>
+                        </ul>
+                        <div class="mini-tags"><span>FastAPI</span><span>SQLAlchemy</span><span>Docker</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <span class="project-note">Not on GitHub</span>
+                        <a href="#contact">Discuss Work</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tech="python fastapi ocr automation ml">
+                    <div class="project-media media-automation">
+                        <i class="fa-solid fa-file-shield" aria-hidden="true"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>OCR Automation & Realtime Backup Workflow</h3>
+                        <p>Backend feature set combining OCR document extraction, browser automation, auto-upload/delete workflows, and production-to-clone backup sync. Source code is not available on my public GitHub.</p>
+                        <ul>
+                            <li>OCR-based document reading and validation</li>
+                            <li>Browser automation for upload and deletion tasks</li>
+                            <li>Server link between production and clone backup environments</li>
+                        </ul>
+                        <div class="mini-tags"><span>Python</span><span>FastAPI</span><span>OCR</span><span>Automation</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <span class="project-note">Not on GitHub</span>
+                        <a href="#contact">Discuss Work</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tech="python fastapi react web">
+                    <div class="project-media media-complaint">
+                        <i class="fa-solid fa-clipboard-check" aria-hidden="true"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Complaint Management System</h3>
+                        <p>Workflow platform for complaint intake, status tracking, role-based updates, and resolution management.</p>
+                        <ul>
+                            <li>REST APIs for complaint lifecycle</li>
+                            <li>Admin and user workflows</li>
+                            <li>Status and reporting views</li>
+                        </ul>
+                        <div class="mini-tags"><span>FastAPI</span><span>React</span><span>REST APIs</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/AnushreeYN/smart-complaint-system" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="#contact">Request Demo</a>
+                    </div>
+                </article>
+
+                <article class="project-card reveal" data-tech="python ml">
+                    <div class="project-media media-energy">
+                        <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                    </div>
+                    <div class="project-body">
+                        <h3>Smart Home Energy Consumption Prediction</h3>
+                        <p>Forecasting project using machine learning to predict energy usage and detect consumption anomalies.</p>
+                        <ul>
+                            <li>88% prediction accuracy</li>
+                            <li>50,000+ records processed</li>
+                            <li>LSTM and Random Forest models</li>
+                        </ul>
+                        <div class="mini-tags"><span>Python</span><span>Pandas</span><span>ML</span></div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="https://github.com/AnushreeYN/smart_home_energy_consumption" target="_blank" rel="noreferrer">GitHub</a>
+                        <a href="#contact">Request Demo</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="section-block credentials" id="certifications">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Credentials</p>
+                <h2>Certifications and achievements.</h2>
+            </div>
+
+            <div class="credentials-grid">
+                <article class="panel certificate-card reveal">
+                    <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    <h3>Python Full Stack Course</h3>
+                    <p>Pentagon Space</p>
+                </article>
+                <article class="panel certificate-card reveal">
+                    <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    <h3>Introduction to Data Science</h3>
+                    <p>Cognitive Class IBM</p>
+                </article>
+                <article class="panel certificate-card reveal">
+                    <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    <h3>Artificial Intelligence</h3>
+                    <p>Infosys Springboard</p>
+                </article>
+                <article class="panel certificate-card reveal">
+                    <i class="fa-solid fa-certificate" aria-hidden="true"></i>
+                    <h3>Deep Learning</h3>
+                    <p>Infosys Springboard</p>
+                </article>
+            </div>
+
+            <div class="achievement-strip reveal" aria-label="Achievements">
+                <div><strong>92%</strong><span>Hospital outcome prediction accuracy</span></div>
+                <div><strong>90%</strong><span>Voice assistant recognition accuracy</span></div>
+                <div><strong>87%</strong><span>Student performance prediction accuracy</span></div>
+            </div>
+        </section>
+
+        <section class="section-block contact" id="contact">
+            <div class="section-heading reveal">
+                <p class="eyebrow">Contact</p>
+                <h2>Let us build something reliable.</h2>
+                <p>Open to backend developer roles as the main focus, with strong interest in AI/ML, OCR automation, API engineering, and data-backed products.</p>
+            </div>
+
+            <div class="contact-grid">
+                <aside class="panel contact-details reveal" aria-label="Contact details">
+                    <a href="mailto:aanusree494@gmail.com"><i class="fa-solid fa-envelope" aria-hidden="true"></i> aanusree494@gmail.com</a>
+                    <a href="tel:+918660286292"><i class="fa-solid fa-phone" aria-hidden="true"></i> +91 86602 86292</a>
+                    <a href="https://www.linkedin.com/in/anushree-y-n-181253209" target="_blank" rel="noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                    <a href="https://github.com/AnushreeYN" target="_blank" rel="noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> GitHub</a>
+                    <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Bengaluru, India</span>
+                </aside>
+
+                <form class="panel contact-form reveal" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" type="text" autocomplete="name" required minlength="2" placeholder="Your name">
+                        <small class="field-error"></small>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" autocomplete="email" required placeholder="your@email.com">
+                        <small class="field-error"></small>
+                    </div>
+                    <div class="form-row">
+                        <label for="subject">Subject</label>
+                        <input id="subject" name="subject" type="text" required minlength="3" placeholder="Backend role / project inquiry">
+                        <small class="field-error"></small>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required minlength="10" placeholder="Tell me what you would like to discuss"></textarea>
+                        <small class="field-error"></small>
+                    </div>
+                    <button class="btn btn-primary submit-btn" type="submit">
+                        <span>Send Message</span>
+                        <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                    </button>
+                    <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                </form>
             </div>
         </section>
     </main>
-    <footer>
-        <div class="middle-footer">
-            <ul class="footer-menu">
-                <li class="footer_menu_list">
-                    <a href="#home">Home</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#about">About</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer_menu_list">
-                    <a href="#contact">Contact</a>
-                </li>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <a class="brand" href="#home">
+                <span class="brand-mark">AY</span>
+                <span>Anushree Y N</span>
+            </a>
+            <ul class="footer-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="socials" aria-label="Social links">
+                <a href="https://www.linkedin.com/in/anushree-y-n-181253209" target="_blank" rel="noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/AnushreeYN" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:aanusree494@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            </div>
         </div>
-        <div class="footer-social-icons">
-                    <div class="icon"><a href="https://www.instagram.com/_anu_g_o_w_d_a_?igsh=MXBkYTdxeDlndGdlMQ==" target="_blank"><i class="uil uil-instagram"></i></a></div>
-                    <div class="icon"><a href="https://www.linkedin.com/in/anushree-y-n-181253209" target="_blank"><i class="uil uil-linkedin-alt"></i></a></div>
-                    <div class="icon"><a href=" https://github.com/AnushreeYN" target="_blank"><i class="uil uil-github-alt"></i></a></div>
-                    <div class="icon"><a href="https://wa.me/918660286292" target="_blank"><i class="uil uil-whatsapp"></i></a></div>
-        </div>
-        <div class="bottom-footer">
-            <p> Copyright &copy; <a href="#home" style="text-decoration: none;">portfolio</a> - All rights reserved 2024</p>
-        </div>
-        </div>
+        <p>Copyright <span id="year"></span> Anushree Y N. All rights reserved.</p>
     </footer>
-  </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
-  <script src="script.js"></script>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+        <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 </html>
